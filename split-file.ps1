@@ -24,7 +24,7 @@ function split($inFile, [int] $buffSize){
   $chunkNum = 1
   $barr = New-Object byte[] $buffSize
 
-  while( $bytesRead = $stream.Read($barr, 0, $buffsize)){
+  while ($bytesRead = $stream.Read($barr, 0, $buffsize)){
     $outFile = "$chunkNum"
     $outStream = [System.IO.File]::OpenWrite($outFile)
     $outStream.Write($barr,0,$bytesRead);
