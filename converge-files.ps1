@@ -11,7 +11,7 @@ param(
     [int]$buffSize = 4MB
 )
 
-function converge {
+function converge($outfile, [int] $buffSize) {
 
   $files = Get-ChildItem | Where-Object { $_.Name -match '^\d+$' } | Sort-Object { [int]$_.Name }
 
