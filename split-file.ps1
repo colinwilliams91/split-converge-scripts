@@ -27,7 +27,7 @@ function split($inFile, [int] $buffSize){
   while ($bytesRead = $stream.Read($barr, 0, $buffsize)){
     $outFile = "$chunkNum"
     $outStream = [System.IO.File]::OpenWrite($outFile)
-    $outStream.Write($barr,0,$bytesRead);
+    $outStream.Write($barr, 0, $bytesRead);
     $outStream.close();
     Write-Output "wrote chunk $outFile to file"
     $chunkNum += 1
