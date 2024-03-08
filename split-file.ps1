@@ -18,7 +18,7 @@ param(
   [int]$buffSize = 4MB
 )
 
-function split($inFile, [Int32] $buffSize){
+function split($inFile, [int] $buffSize){
 
   $stream = [System.IO.File]::OpenRead($inFile)
   $chunkNum = 1
