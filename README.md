@@ -1,5 +1,5 @@
 # Summary:
-If you have a file, such as a `.zip` that exceeds the max size of your mode of transfer (such as email @ 25mb or something...):
+If you have a file, such as a `.zip` that exceeds the max size of your mode of transfer (such as email @ 25mb or something...)
 
 ## To Use:
 1. Make sure the directory you clone these scripts into is in your PATH, else, you will need to invoke with full path to file
